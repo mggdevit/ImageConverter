@@ -1,0 +1,11 @@
+D:\Projects\C#\ImageConverter\bin\x64\Release\ImageConverter.exe.config
+D:\Projects\C#\ImageConverter\bin\x64\Release\ImageConverter.exe
+D:\Projects\C#\ImageConverter\bin\x64\Release\ImageConverter.pdb
+D:\Projects\C#\ImageConverter\bin\x64\Release\Magick.NET-Q16-HDRI-AnyCPU.dll
+D:\Projects\C#\ImageConverter\bin\x64\Release\Magick.NET-Q16-HDRI-AnyCPU.xml
+D:\Projects\C#\ImageConverter\obj\x64\Release\ImageConverter.MainForm.resources
+D:\Projects\C#\ImageConverter\obj\x64\Release\ImageConverter.Properties.Resources.resources
+D:\Projects\C#\ImageConverter\obj\x64\Release\ImageConverter.csproj.GenerateResource.cache
+D:\Projects\C#\ImageConverter\obj\x64\Release\ImageConverter.csproj.CopyComplete
+D:\Projects\C#\ImageConverter\obj\x64\Release\ImageConverter.exe
+D:\Projects\C#\ImageConverter\obj\x64\Release\ImageConverter.pdb
