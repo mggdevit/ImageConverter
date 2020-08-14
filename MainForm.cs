@@ -42,12 +42,14 @@ namespace ImageConverter
         {
             using (FolderBrowserDialog folderBrowser = new FolderBrowserDialog())
             {
+                dirs.Clear();
+                files.Clear();
                 DialogResult result = folderBrowser.ShowDialog();
                 if(result == DialogResult.OK)
                 {
                     lPath.Text = source_dir = folderBrowser.SelectedPath;
                     dest_dir = source_dir + "\\Convert";
-                    GetFileTree(source_dir);
+                    GetDirAndFileList(source_dir);
                     pBar.Maximum = files.Count;
                 }
             }
@@ -59,7 +61,7 @@ namespace ImageConverter
             btConvert.Enabled = !String.IsNullOrEmpty(source_dir) && cbFormats.SelectedIndex >= 0;
         }
 
-        private void GetFileTree(string Path)
+        private void DirIterator(string Path)
         {
             try
             {
@@ -72,8 +74,24 @@ namespace ImageConverter
                     {
                         files.Add(file);
                     }
-                    GetFileTree(dir);
+                    DirIterator(dir);
                 }
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(String.Format("Can't find files: {0}", ex.Message), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void GetDirAndFileList(string Path)
+        {
+            try
+            {
+                foreach (string file in Directory.GetFiles(Path))
+                {
+                    files.Add(file);
+                }
+                DirIterator(Path);
             }
             catch (System.Exception ex)
             {

@@ -9,3 +9,5 @@ D:\Projects\C#\ImageConverter\obj\Debug\ImageConverter.csproj.GenerateResource.c
 D:\Projects\C#\ImageConverter\obj\Debug\ImageConverter.csproj.CopyComplete
 D:\Projects\C#\ImageConverter\obj\Debug\ImageConverter.exe
 D:\Projects\C#\ImageConverter\obj\Debug\ImageConverter.pdb
+D:\Projects\C#\ImageConverter\obj\Debug\ImageConverter.csprojAssemblyReference.cache
+D:\Projects\C#\ImageConverter\obj\Debug\ImageConverter.csproj.CoreCompileInputs.cache
