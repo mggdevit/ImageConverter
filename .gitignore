@@ -1,0 +1,6 @@
+bin/
+obj/
+packages/
+install-mono.sh
+*.user
+*.suo
